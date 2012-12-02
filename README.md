@@ -11,12 +11,12 @@ leeroy --username john@doe.com --password p455w0rd --endpoint http://jenkins.dev
 
 ##Options:
 
-+----------------------+--------------------------+
-| Argument             | Description              |
-+----------------------+--------------------------+
-|  --username, -u <s>: | Your Jenkins username    |
-|  --password, -p <s>: | Your Jenkins password    |
-|  --endpoint, -e <s>: | The root URL of jenkins  |
-|       --version, -v: | Print version and exit   |
-|          --help, -h: | Show this message        |
-+-------------------------------------------------+
+    +----------------------+--------------------------+
+    | Argument             | Description              |
+    +----------------------+--------------------------+
+    |  --username, -u <s>: | Your Jenkins username    |
+    |  --password, -p <s>: | Your Jenkins password    |
+    |  --endpoint, -e <s>: | The root URL of jenkins  |
+    |       --version, -v: | Print version and exit   |
+    |          --help, -h: | Show this message        |
+    +-------------------------------------------------+

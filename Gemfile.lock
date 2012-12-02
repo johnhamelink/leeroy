@@ -1,0 +1,20 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    json (1.7.5)
+    mime-types (1.19)
+    paint (0.8.5)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+    terminal-table (1.4.5)
+    trollop (2.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  json (~> 1.7.5)
+  paint (~> 0.8.5)
+  rest-client (~> 1.6.7)
+  terminal-table (~> 1.4.5)
+  trollop (~> 2.0)

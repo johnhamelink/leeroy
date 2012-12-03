@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
     s.email       = ["john@johnhamelink.com"]
     s.homepage    = "https://github.com/johnhamelink/leeroy"
     s.summary     = "Quickly see the status of your jenkins jobs"
-    s.description = "Leeroy lets you quickly check the status of your builds from the commandline."
+    s.description = "Leeroy lets you quickly check the status of your jenkins builds from the commandline."
 
     s.required_rubygems_version = ">= 1.8.23"
     s.rubyforge_project         = "leeroy"

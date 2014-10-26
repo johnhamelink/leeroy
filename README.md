@@ -1,4 +1,4 @@
-#Leeroy
+#Leeroy [![Gem Version](https://badge.fury.io/rb/leeroy.svg)](http://badge.fury.io/rb/leeroy)
 
 Leeeeeeeeeeeeeeeeroy Jenkins!
 

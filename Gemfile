@@ -1,6 +1,4 @@
-source "http://rubygems.org"
-gem "paint", "~>0.8.5"
-gem "terminal-table", "~>1.4.5"
-gem "rest-client", "~>1.6.7"
-gem "json", "~>1.7.5"
-gem "trollop", "~>2.0"
+source 'https://rubygems.org'
+
+# Specify your gem's dependencies in leeroy.gemspec
+gemspec

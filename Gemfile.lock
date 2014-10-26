@@ -1,11 +1,23 @@
-GEM
-  remote: http://rubygems.org/
+PATH
+  remote: .
   specs:
-    json (1.7.5)
-    mime-types (1.19)
-    paint (0.8.5)
-    rest-client (1.6.7)
-      mime-types (>= 1.16)
+    leeroy (0.0.1)
+      paint (~> 0.8)
+      rest-client (~> 1.7)
+      terminal-table (~> 1.4)
+      trollop (~> 2.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    gem-release (0.7.3)
+    mime-types (2.4.3)
+    netrc (0.8.0)
+    paint (0.8.7)
+    rake (10.3.2)
+    rest-client (1.7.2)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
     terminal-table (1.4.5)
     trollop (2.0)
 
@@ -13,8 +25,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  json (~> 1.7.5)
-  paint (~> 0.8.5)
-  rest-client (~> 1.6.7)
-  terminal-table (~> 1.4.5)
-  trollop (~> 2.0)
+  bundler (~> 1.7)
+  gem-release (~> 0.7)
+  leeroy!
+  rake (~> 10.0)

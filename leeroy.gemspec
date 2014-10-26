@@ -1,22 +1,29 @@
-lib = File.expand_path('../lib/', __FILE__)
-$:.unshift lib unless $:.include?(lib)
+# coding: utf-8
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'leeroy/version'
 
-Gem::Specification.new do |s|
-    s.name        = "leeroy"
-    s.version     = 0.1
-    s.platform    = Gem::Platform::RUBY
-    s.authors     = ["John Hamelink"]
-    s.email       = ["john@johnhamelink.com"]
-    s.homepage    = "https://github.com/johnhamelink/leeroy"
-    s.summary     = "Quickly see the status of your jenkins jobs"
-    s.description = "Leeroy lets you quickly check the status of your jenkins builds from the commandline."
+Gem::Specification.new do |spec|
+  spec.name          = "leeroy"
+  spec.version       = Leeroy::VERSION
+  spec.authors       = ["John Hamelink"]
+  spec.email         = ["hello@farmer.io"]
+  spec.summary       = %q{Quickly see the status of your jenkins jobs}
+  spec.description   = %q{Leeroy lets you quickly check the status of your jenkins builds from the commandline.}
+  spec.homepage      = "https://github.com/johnhamelink/leeroy"
+  spec.license       = "MIT"
 
-    s.required_rubygems_version = ">= 1.8.23"
-    s.rubyforge_project         = "leeroy"
-    s.add_dependency "paint", "~> 0.8"
-    s.add_dependency "rest-client", "~> 1.7"
-    s.add_dependency "trollop", "~> 2.0"
+  spec.files         = `git ls-files -z`.split("\x0")
+  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
+  spec.require_paths = ["lib"]
 
-    s.files       = Dir.glob("{bin}/**/*") + %w(LICENSE README.md)
-    s.executables = ['leeroy']
+  spec.add_dependency "paint", "~> 0.8"
+  spec.add_dependency "rest-client", "~> 1.7"
+  spec.add_dependency "trollop", "~> 2.0"
+  spec.add_dependency "terminal-table", "~> 1.4"
+
+  spec.add_development_dependency "gem-release", "~> 0.7"
+  spec.add_development_dependency "bundler", "~> 1.7"
+  spec.add_development_dependency "rake", "~> 10.0"
 end

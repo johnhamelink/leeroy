@@ -13,6 +13,9 @@ Gem::Specification.new do |s|
 
     s.required_rubygems_version = ">= 1.8.23"
     s.rubyforge_project         = "leeroy"
+    s.add_dependency "paint", "~> 0.8"
+    s.add_dependency "rest-client", "~> 1.7"
+    s.add_dependency "trollop", "~> 2.0"
 
     s.files       = Dir.glob("{bin}/**/*") + %w(LICENSE README.md)
     s.executables = ['leeroy']

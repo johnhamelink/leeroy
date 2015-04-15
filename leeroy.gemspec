@@ -18,9 +18,9 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "paint", "~> 0.8"
-  spec.add_dependency "rest-client", "~> 1.7"
-  spec.add_dependency "trollop", "~> 2.0"
+  spec.add_dependency "paint", "~> 1.0"
+  spec.add_dependency "rest-client", "~> 1.8"
+  spec.add_dependency "trollop", "~> 2.1"
   spec.add_dependency "terminal-table", "~> 1.4"
 
   spec.add_development_dependency "gem-release", "~> 0.7"
